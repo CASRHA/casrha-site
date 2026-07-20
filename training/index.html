@@ -35,7 +35,21 @@
   </div>
 
   <style>
+<style>
 @media (max-width: 768px) {
+  /* Fix 1: Ensure the main header bar and its close button always stay on top of the menu layers */
+  .header {
+    position: relative;
+    z-index: 1002;
+    background-color: #ffffff; /* Gives header a solid background so text doesn't bleed behind it */
+  }
+
+  .nav__toggle {
+    position: relative;
+    z-index: 1003; /* Keeps the toggle button interactive and above everything */
+  }
+
+  /* Fix 2: Adjust your menu position and stack it cleanly */
   .nav__menu {
     position: fixed; 
     top: 60px;       
@@ -67,6 +81,7 @@
     text-align: center;
   }
 
+  /* Fix 3: Keep the backdrop below the header and menu panels */
   .nav__backdrop {
     position: fixed;
     top: 0;
@@ -74,7 +89,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 999;                          
+    z-index: 999; /* Lower than menu (1000) and header (1002) */
   }
 }
 </style>
