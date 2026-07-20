@@ -34,65 +34,6 @@
     </div>
   </div>
 
-  <style>
-<style>
-@media (max-width: 768px) {
-  /* Fix 1: Ensure the main header bar and its close button always stay on top of the menu layers */
-  .header {
-    position: relative;
-    z-index: 1002;
-    background-color: #ffffff; /* Gives header a solid background so text doesn't bleed behind it */
-  }
-
-  .nav__toggle {
-    position: relative;
-    z-index: 1003; /* Keeps the toggle button interactive and above everything */
-  }
-
-  /* Fix 2: Adjust your menu position and stack it cleanly */
-  .nav__menu {
-    position: fixed; 
-    top: 60px;       
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 60px); 
-    background-color: #ffffff;  
-    z-index: 1000;              
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-    gap: 1.5rem;
-  }
-
-  .nav__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    width: 100%;
-  }
-
-  .nav__links a {
-    font-size: 1.2rem;
-    color: #333333; 
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    text-align: center;
-  }
-
-  /* Fix 3: Keep the backdrop below the header and menu panels */
-  .nav__backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 999; /* Lower than menu (1000) and header (1002) */
-  }
-}
-</style>
   <!-- ===================== HEADER ===================== -->
   <header class="header">
     <div class="container nav">
@@ -140,8 +81,6 @@
     <!-- ===================== PAGE HEADER ===================== -->
     <section class="page-header">
       <div class="container">
-        <nav class="crumbs" aria-label="Breadcrumb">
-        </nav>
         <span class="eyebrow">Learn at your own pace</span>
         <h1>Self-Paced Online Training</h1>
         <p>Watch six video modules, download training manuals, complete a practical outreach, and earn your Certificate of Completion — all at your own pace, 100% free.</p>
