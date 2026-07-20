@@ -50,7 +50,7 @@ training/
 
 ### 4. **Certificate Portal Integration**
 - Preview of certificate design
-- Direct link to `../certificate-portal/index.html`
+- Direct link to `../certificate-request/index.html`
 - Clear instructions on submission process
 
 ### 5. **Live Support**
@@ -100,7 +100,7 @@ The Tawk.to widget is already embedded and will work immediately after deploymen
 ✅ YouTube playlist loads and plays  
 ✅ All 7 PDF download buttons work (no 404s)  
 ✅ FAQ accordion expands/collapses smoothly  
-✅ Certificate CTA links to `../certificate-portal/index.html`  
+✅ Certificate CTA links to `../certificate-request/index.html`  
 ✅ Tawk.to widget appears bottom-right  
 ✅ Email link opens mail client  
 ✅ Mobile nav toggle works  
